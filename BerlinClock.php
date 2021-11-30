@@ -119,7 +119,7 @@ class BerlinClock
 
     }
     //Step6 horlogeEntiere
-    public function testFinale($heure,$minute,$seconde){
+    public function testHorlogeEntiere($heure,$minute,$seconde){
         $value1= $this->testSeconde($seconde);
         $value2= $this->testHeurePremiereLigne($heure);
         $value3= $this->testHeureDeuxiemeligne($heure);

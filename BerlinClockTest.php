@@ -237,5 +237,13 @@ class BerlinClockTest extends TestCase
 
 
     }
+    public function testHeureDeuxiemelignePlusPetitQue1ShouldReturn0000(){
+        $berlinClock = new BerlinClock();
+        $actual = $berlinClock ->testHeureDeuxiemeligne(0);
+
+        $this->assertEquals("0000",$actual);
+
+    }
+
 
 }

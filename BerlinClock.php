@@ -55,7 +55,33 @@ class BerlinClock
         return $value;
 
     }
+    //Step3 heureSimple
+    public function testHeureDeuxiemeligne($hour2){
+        if(strlen($hour2)>1){
+            $hour2=substr($hour2,1);
+        }
+        if($hour2 >= 5){
+            $hour2=$hour2-5;
+        }
 
+        if($hour2==0) {
+            return "0000";
+        }
+        else if($hour2==1){
+            return "R000";
+        }
+        else if ($hour2==2){
+            return "RR00";
+        }
+        else if ($hour2==3){
+            return "RRR0";
+        }
+        else {
+            return "RRRR";
+        }
+
+
+    }
 
 
 

@@ -333,12 +333,12 @@ class BerlinClockTest extends TestCase
         $this->assertEquals("RRR0",$actual);
 
     }
-    public function testHeurePremiereLigne24ShouldReturnRRRR(){
+    public function testHeurePremiereLigne3ShouldReturn0000(){
         $berlinClock = new BerlinClock();
 
-        $actual = $berlinClock ->testHeurePremiereLigne(24);
+        $actual = $berlinClock ->testHeurePremiereLigne(3);
 
-        $this->assertEquals("RRRR",$actual);
+        $this->assertEquals("0000",$actual);
 
     }
 }

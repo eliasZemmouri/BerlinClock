@@ -176,7 +176,7 @@ class BerlinClockTest extends TestCase
 
 
     }
-    public function testMinuteBloc35ShouldReturnYYRYYRYY000(){
+    public function testMinuteBloc40ShouldReturnYYRYYRYY000(){
 
         $berlinClock = new BerlinClock();
 
@@ -186,5 +186,6 @@ class BerlinClockTest extends TestCase
 
 
     }
+
 
 }

@@ -109,7 +109,14 @@ class BerlinClock
 
         }
     }
-
+    //Step5 seconde
+    public function testSeconde($seconde){
+        if($seconde % 2==0){
+            return "R";
+        }else{
+            return "0";
+        }
+    }
 
 
 }

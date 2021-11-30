@@ -341,4 +341,17 @@ class BerlinClockTest extends TestCase
         $this->assertEquals("0000",$actual);
 
     }
+    public function testSecondePairShouldReturnR(){
+        $berlinClock = new BerlinClock();
+
+        $actual = $berlinClock ->testSeconde(2);
+
+        $this->assertEquals("R",$actual);
+    }
+
+
+
+
+
+
 }

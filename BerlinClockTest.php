@@ -325,4 +325,12 @@ class BerlinClockTest extends TestCase
         $this->assertEquals("RR00",$actual);
 
     }
+    public function testHeurePremiereLigne15ShouldReturnRRR0(){
+        $berlinClock = new BerlinClock();
+
+        $actual = $berlinClock ->testHeurePremiereLigne(15);
+
+        $this->assertEquals("RRR0",$actual);
+
+    }
 }

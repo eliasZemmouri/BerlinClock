@@ -196,6 +196,15 @@ class BerlinClockTest extends TestCase
 
 
     }
+    public function testMinuteBloc50ShouldReturnYYRYYRYYRY0(){
 
+        $berlinClock = new BerlinClock();
+
+        $actual = $berlinClock ->testMinuteBloc5(50);
+
+        $this->assertEquals("YYRYYRYYRY0",$actual);
+
+
+    }
 
 }

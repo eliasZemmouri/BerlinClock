@@ -96,6 +96,16 @@ class BerlinClockTest extends TestCase
 
 
     }
+    public function testMinuteBloc5PlusPetitQue5ShouldReturn00000000000(){
+
+        $berlinClock = new BerlinClock();
+
+        $actual = $berlinClock ->testMinuteBloc5(1);
+
+        $this->assertEquals("00000000000",$actual);
+
+
+    }
 
 
 }

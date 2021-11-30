@@ -230,6 +230,7 @@ class BerlinClockTest extends TestCase
 
         $berlinClock = new BerlinClock();
 
+
         $actual = $berlinClock ->testMinuteBloc5(24);
 
         $this->assertEquals("YYRY0000000",$actual);

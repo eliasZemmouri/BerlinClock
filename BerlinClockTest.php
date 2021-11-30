@@ -5,6 +5,7 @@
     require 'BerlinClock.php';
     class BerlinClockTest extends TestCase
     {
+        ///////////////////////////////////TEST MINUTE 2nd LINE///////////////////////////////////////
         public function testMinuteSimplePlusPetitQue1ShouldReturn0000(){
 
             $berlinClock = new BerlinClock();
@@ -96,6 +97,7 @@
 
 
         }
+        /////////////////////////////////////////TEST MINUTE BLOC OF 5////////////////////////////
         public function testMinuteBloc5PlusPetitQue5ShouldReturn00000000000(){
 
             $berlinClock = new BerlinClock();
@@ -237,6 +239,7 @@
 
 
         }
+        //////////////////////////////////////////////TEST HOURS 2nd LINE""""""""""""""""""
         public function testHeureDeuxiemelignePlusPetitQue1ShouldReturn0000(){
             $berlinClock = new BerlinClock();
             $actual = $berlinClock ->testHeureDeuxiemeligne(0);
@@ -301,6 +304,7 @@
             $this->assertEquals("RRRR",$actual);
 
         }
+        /////////////////////////////////////// TEST HOURS OF BLOC 5/////////////////////////////
         public function testHeurePremiereLignePlusPetitQue5ShouldReturn0000(){
             $berlinClock = new BerlinClock();
 
@@ -342,7 +346,7 @@
             $this->assertEquals("0000",$actual);
 
         }
-
+        ////////////////////////////////////////// TEST SECONDE /////////////////////////////
         public function testSecondePairShouldReturnR(){
             $berlinClock = new BerlinClock();
 
@@ -358,7 +362,7 @@
 
             $this->assertEquals("0",$actual);
         }
-
+        ///////////////////// TEST BERLIN CLOCK///////////////////////
         public function testHorlogeEntiere(){
             $berlinClock = new BerlinClock();
 

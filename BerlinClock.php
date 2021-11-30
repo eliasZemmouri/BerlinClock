@@ -82,6 +82,34 @@ class BerlinClock
 
 
     }
+    //Step4 heureBloc5
+
+    public function testHeurePremiereLigne($heure){
+
+        if($heure<5){
+
+            return "0000";
+
+        }
+
+        else if($heure >=5 && $heure <10){
+
+            return  "R000";
+
+        }else if($heure >=10 && $heure <15){
+
+            return "RR00";
+
+        }else if($heure >=15 && $heure <20){
+
+            return  "RRR0";
+
+        }else{
+
+            return "RRRR";
+
+        }
+    }
 
 
 

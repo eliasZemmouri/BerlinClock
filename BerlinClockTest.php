@@ -26,5 +26,14 @@ class BerlinClockTest extends TestCase
 
 
     }
+    public function testMinuteSimple2ShouldReturnYY00(){
 
+        $berlinClock = new BerlinClock();
+
+        $actual = $berlinClock ->testMinute2emeLigne(2);
+
+        $this->assertEquals("YY00",$actual);
+
+
+    }
 }

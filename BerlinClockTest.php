@@ -369,7 +369,7 @@
 
         }
 
-        public function testHorlogeEntierebis(){
+        public function testHorlogeEntiereBis(){
             $berlinClock = new BerlinClock();
 
             $actual = $berlinClock ->testHorlogeEntiere(22,10,3);

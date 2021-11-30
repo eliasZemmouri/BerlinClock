@@ -105,7 +105,6 @@ class BerlinClock
             return  "RRR0";
 
         }else{
-
             return "RRRR";
 
         }

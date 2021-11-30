@@ -337,7 +337,14 @@
             $this->assertEquals("RRR0",$actual);
 
         }
+        public function testHeurePremiereLigne20ShouldReturnRRRR(){
+            $berlinClock = new BerlinClock();
 
+            $actual = $berlinClock ->testHeurePremiereLigne(20);
+
+            $this->assertEquals("RRRR",$actual);
+
+        }
         public function testHeurePremiereLigne3ShouldReturn0000(){
             $berlinClock = new BerlinClock();
 

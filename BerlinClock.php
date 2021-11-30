@@ -118,7 +118,18 @@ class BerlinClock
         }
 
     }
+    //Step6 horlogeEntiere
+    public function testFinale($heure,$minute,$seconde){
+        $value1= $this->testSeconde($seconde);
+        $value2= $this->testHeurePremiereLigne($heure);
+        $value3= $this->testHeureDeuxiemeligne($heure);
+        $value4= $this->testMinuteBloc5($minute);
+        $value5= $this->testMinute2emeLigne($minute);
+        return $value1 ."\n" . $value2 ."\n" . $value3 ."\n" .$value4 ."\n" . $value5;
 
+
+
+    }
 
 }
 

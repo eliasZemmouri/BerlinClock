@@ -357,6 +357,15 @@ class BerlinClockTest extends TestCase
     }
 
 
+    public function testHorlogeEntiere(){
+        $berlinClock = new BerlinClock();
+
+        $actual = $berlinClock ->testFinale(15,46,58);
+
+        $this -> assertEquals("R\nRRR0\n0000\nYYRYYRYYR00\nY000",$actual);
+
+
+    }
 
 
 
